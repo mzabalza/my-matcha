@@ -1,0 +1,32 @@
+.landing-container {
+    background-image: linear-gradient(to bottom, rgba(249, 0, 105, 0.95), rgba(252, 95, 69, 0.9));
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    .logo-img {
+        // height:50vh;
+        height: 2rem;
+        // width: 1.45rem;
+
+        display: flex;
+        margin: 30vh auto;
+
+        animation: beat .5s infinite alternate;
+        
+        /* Heart beat animation */
+        @keyframes beat{
+            to { transform: scale(3); }
+        }
+
+    }
+}
+
+
+

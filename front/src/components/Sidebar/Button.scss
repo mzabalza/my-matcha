@@ -1,0 +1,22 @@
+.btn-text {
+    letter-spacing: 2px;
+    // padding: 0.8rem 1.5rem;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+
+
+
+
+
+
+    &:active {
+        box-shadow: 0 0.5rem 1rem rgba(var(--color-grey-dark-1), .15);
+        // transform: translateY(0);
+        border-bottom: 2px solid rgb(211, 161, 36);
+
+
+
+
+    }
+}

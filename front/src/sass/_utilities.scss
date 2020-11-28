@@ -1,0 +1,55 @@
+
+//////////////////////////////////////////////////////
+// FLEX
+
+.flex-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.flex-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+//////////////////////////////////////////////////////
+// MARGIN
+.my {
+    margin: 0.5rem 0;
+}
+.my-1 {
+    margin: 1rem 0;
+}
+.my-2 {
+    margin: 2rem 2rem;
+}
+.my-t1 {
+    margin-top: 1rem;
+}
+.my-t3 {
+    margin-top: 3rem;
+}
+.my-t6 {
+    margin-top: 6rem;
+}
+.my-b3 {
+    margin-bottom: 3rem;
+}
+.my-b6 {
+    margin-bottom: 6rem;
+}
+
+//////////////////////////////////////////////////////
+// PADDING
+.p-2 {
+    padding: 0 2rem;
+}
+.p2 {
+    padding: 2rem;
+}

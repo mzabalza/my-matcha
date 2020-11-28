@@ -1,0 +1,22 @@
+.loginButton {
+    background-color: white;
+    padding: 1rem 2rem;
+    color: rgba(249, 0, 105, 0.95);
+    box-shadow: 0 0.5rem 1rem rgba(black, .15);
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    font-family: Roboto;
+
+
+
+
+    &:hover {
+        box-shadow: 0rem 1rem 3rem 2rem rgba(black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 0.5rem 1rem rgba(black, .15);
+        transform: translateY(0);
+    }
+}

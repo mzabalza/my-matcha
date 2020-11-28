@@ -1,0 +1,19 @@
+.btn-submit {
+    background-color: rgba(255,255,255,0.8);
+    padding: 1.2rem 8rem;
+    border-radius: 4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    &:hover {
+        box-shadow: 0rem 1rem 3rem 2rem rgba(black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 0.5rem 1rem rgba(black, .15);
+        transform: translateY(0);
+    }
+
+
+}

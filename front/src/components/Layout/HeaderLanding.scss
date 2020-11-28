@@ -1,0 +1,42 @@
+.headerLanding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    
+    font-size: 2rem;
+    font-family: Roboto;
+
+
+
+    &-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+
+        .logo-img {
+            height: 4rem;
+            margin: 1rem;
+        }
+    }
+
+    &-name {
+        font-size: 3rem;
+        font-family: Righteous, Poppins;
+        color: white;
+        font-weight: 700;
+    }
+
+    &-item {
+        padding: 2rem;
+    }
+
+}

@@ -1,0 +1,59 @@
+.card {
+    // background-image: url("https://images-ssl.gotinder.com/54bfe70dfb8f64205e878fb2/640x800_6d8390e6-3043-4d58-b30d-3259689ab3ec.jpg");
+    // background-image: url("http://localhost:5000/images/30_1602799584148.jpg");
+    background-position: 50.4587% 0%;
+    background-size: 120.527%;
+
+    height: 45rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 1rem;
+
+    box-shadow: 1rem 0rem 3rem 0rem rgba(0, 0, 0, 0.5);
+
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+
+        &-name {
+            text-transform: uppercase;
+            font-size: 2rem;
+            color:white;
+        }
+
+        &-info {
+            font-size: 2rem;
+            color: white;
+        }
+    }
+}
+
+.actions {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+    &-icons {
+        display: flex;
+        .heart {
+            font-size: 3rem;
+            margin: 1rem;
+            color: rgb(60, 196, 60);
+
+        }
+    
+        .cross {
+            font-size: 3rem;
+            margin: 1rem;
+            color: red;
+        }
+
+    }
+
+    
+}
+
+

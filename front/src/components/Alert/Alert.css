@@ -1,0 +1,46 @@
+.alert {
+    background: #ffdb9b;
+    padding: 20px 40px; 
+    min-width: 300px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    border-left: 8 px solid #ffa502;
+}
+
+.alert .fa-exclamation-circle {
+    position:absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ce8500;
+    font-size: 30px;
+}
+
+.alert .msg {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #ce8500;
+}
+
+.alert .close-btn {
+    position: absolute;
+    background: #ffd080;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.alert .close-btn:hover {
+    background: #fdbc4c;
+}
+
+.close-btn .fa-times {
+    color: #ce8500; 
+    font-size: 22px;
+    line-height: 40px;
+}
