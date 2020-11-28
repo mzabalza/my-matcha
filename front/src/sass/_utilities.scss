@@ -11,10 +11,19 @@
 
 }
 
-.flex-row-1 {
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-row-sa {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.flex-row-sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 

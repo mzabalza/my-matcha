@@ -38,10 +38,19 @@
 
     &-icons {
         display: flex;
+        cursor: pointer;
+
+
         .heart {
             font-size: 3rem;
             margin: 1rem;
             color: rgb(60, 196, 60);
+            transition: transform .15s;
+
+            &:hover {
+                transform: scale(1.7)
+            }
+
 
         }
     
@@ -49,6 +58,12 @@
             font-size: 3rem;
             margin: 1rem;
             color: red;
+            transition: transform .15s;
+
+            &:hover {
+                transform: scale(1.7)
+            }
+
         }
 
     }

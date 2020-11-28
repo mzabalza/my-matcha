@@ -36,7 +36,7 @@ const Form = ({ isAuthenticated, login }) => {
 
     return (
         <div>
-            <div className='flex-row-1 my-2 users-icon'>
+            <div className='flex-row-sa my-2 users-icon'>
                 <i class="fas fa-users"></i>
             </div>
 
@@ -52,7 +52,7 @@ const Form = ({ isAuthenticated, login }) => {
                 <div className="form-group">
                     <input type="password" name='password' placeholder='password' autoComplete="off" onChange={e => onChange(e)} />
                 </div>
-                <div className='flex-row-1 my-2'>
+                <div className='flex-row-sa my-2'>
                     <SubmitButton onClick={onSubmit} />
                 </div>
             </form>

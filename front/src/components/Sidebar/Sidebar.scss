@@ -27,7 +27,9 @@
     &-header {
         height: 6rem;
         // background-color: goldenrod;
-        background-image: linear-gradient(to right, rgb(212, 159, 22), rgb(211, 161, 36), rgb(168, 121, 0));
+        // background-image: linear-gradient(to right, rgb(212, 159, 22), rgb(211, 161, 36), rgb(168, 121, 0));
+        background-image: linear-gradient(to right, rgba(249, 0, 105, 0.95), rgba(252, 95, 69, 0.9));
+
         // background-image: linear-gradient(to right , rgb(247, 91, 91),rgb(204, 55, 55));
 
         display: flex;

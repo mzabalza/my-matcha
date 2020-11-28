@@ -3,7 +3,8 @@ import { GET_MATCHES, GET_CANDIDATES, LIKE_ERROR } from '../actions/types';
 
 const initialState = {
     matches: [],
-    candidates: []
+    candidates: [],
+    selectedUser: null,
 };
 
 export default function (state = initialState, action) {

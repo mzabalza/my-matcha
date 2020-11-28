@@ -13,7 +13,7 @@ import SidebarChat from './SidebarChat';
 import SidebarMatch from './SidebarMatch';
 
 
-const Sidebar = ({ user, logout }) => {
+const Sidebar = ({ user, logout, setShowProfile, selectedUser, setSelectedUser }) => {
     const [inChat, setInChat] = useState(false);
 
     console.log(user);
@@ -34,7 +34,7 @@ const Sidebar = ({ user, logout }) => {
                     <a className='btn-text' onClick={() => setInChat(true)}>MESSAGES</a>
                 </div>
                 <div className='sidebar-content'>
-                    {inChat ? < SidebarChat /> : < SidebarMatch />}
+                    {inChat ? < SidebarChat /> : < SidebarMatch setShowProfile={setShowProfile} setSelectedUser={setSelectedUser} />}
                 </div>
             </div>
             <div className='sidebar-logout' onClick={logout}>

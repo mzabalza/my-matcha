@@ -46,7 +46,7 @@ const RegisterForm = ({ alerts, setAlert, register, isAuthenticated }) => {
 
         <div>
 
-            <div className='flex-row-1 my-2 users-icon'>
+            <div className='flex-row-sa my-2 users-icon'>
                 <i class="fas fa-users"></i>
             </div>
 
@@ -84,7 +84,7 @@ const RegisterForm = ({ alerts, setAlert, register, isAuthenticated }) => {
                     <input placeholder='password' name='password' type='password' onChange={e => onChange(e)}></input>
                 </div>
 
-                <div className='flex-row-1 my-2'>
+                <div className='flex-row-sa my-2'>
                     <SubmitButton onClick={onSubmit} />
                 </div>
 

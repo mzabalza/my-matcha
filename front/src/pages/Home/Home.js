@@ -16,6 +16,7 @@ import Candidates from '../../components/Candidates/Candidates';
 const Home = ({ isAuthenticated, user }) => {
 
     const [showProfile, setShowProfile] = useState(false);
+    const [selectedUser, setSelectedUser] = useState(null);
 
     if (!isAuthenticated) {
         return <Redirect to='/' />
@@ -23,9 +24,9 @@ const Home = ({ isAuthenticated, user }) => {
 
     return (
         <div className='home-container'>
-            <Sidebar />
+            <Sidebar setShowProfile={setShowProfile} setSelectedUser={setSelectedUser} />
             <Candidates />
-            {showProfile && <SidebarProfile />}
+            {showProfile && <SidebarProfile selectedUser={selectedUser} />}
         </div>
     )
 };
