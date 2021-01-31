@@ -1,14 +1,27 @@
+import { Satellite } from '@material-ui/icons';
 import React from 'react';
 import { connect } from 'react-redux';
+import io from 'socket.io-client';
 
-const SidebarChat = () => {
+let socket;
+
+
+const SidebarChat = ({ user }) => {
+
+    const ENDPOINT = 'localhost:5000';
+
 
     return (
         <div>
             SidebarChat
+            {user && user.user.firstname}
         </div>
     )
 
 }
 
-export default connect()(SidebarChat);
+const mapStateToProps = state => ({
+    user: state.auth.user
+})
+
+export default connect(mapStateToProps)(SidebarChat);
