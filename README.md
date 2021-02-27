@@ -1,4 +1,8 @@
-## SOCKET.IO
+## MATCHA
+
+<p align="center"><img  src="readme/matcha.gif"></p>
+
+[Work in progress...]
 
 ### Usage
 run docker-compose.yml file to run mysql and phpmyadmin containers
@@ -26,13 +30,4 @@ npm i
 ```
 
 
-http://localhost:8080/
-
-
-
-### Resources
-* Socket.io + Hooks https://levelup.gitconnected.com/handling-socketio-rooms-with-react-hooks-4723dd44692e
-* https://dev.to/aduranil/how-to-use-websockets-with-redux-a-step-by-step-guide-to-writing-understanding-connecting-socket-middleware-to-your-project-km3
-* SOCKET.IO Cheatsheet: https://socket.io/docs/emit-cheatsheet/
-* React / Redux / Sockets : New player connected: cw_ypQb2_Y9KMZ5QAACJ
-* Tetris css grid
+http://localhost:3000
