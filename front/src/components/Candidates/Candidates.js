@@ -10,7 +10,7 @@ import Card from '../Card/Card';
 import { getCandidates } from '../../store/actions/match';
 
 
-const Candidates = ({ user, getCandidates, candidates }) => {
+const Candidates = ({ user, getCandidates, candidates, setShowProfile, setSelectedUser }) => {
 
     const [resetCandidates, setResetCandidates] = useState(true);
 
@@ -28,7 +28,8 @@ const Candidates = ({ user, getCandidates, candidates }) => {
     return (
         <div className='candidates'>
             {candidates && candidates.length > 0 &&
-                <Card candidate={candidates[0]} setResetCandidates={setResetCandidates} />}
+                <Card candidate={candidates[0]} setShowProfile={setShowProfile}
+                    setResetCandidates={setResetCandidates} setSelectedUser={setSelectedUser} />}
         </div>
     )
 

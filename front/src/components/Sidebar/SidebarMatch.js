@@ -29,7 +29,7 @@ const SidebarMatch = ({ matches, getMatches, setShowProfile, setSelectedUser }) 
 
     return (
         matches && matches.length && <div className='sidebar-matches'>
-            {matches.map(match => (<MiniCard user={match} setShowProfile={setShowProfile} setSelectedUser={setSelectedUser} />))}
+            {matches.map(user => (<MiniCard user={user} setShowProfile={setShowProfile} setSelectedUser={setSelectedUser} />))}
         </div>
     )
 }

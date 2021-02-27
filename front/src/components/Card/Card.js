@@ -9,9 +9,15 @@ import { connect } from 'react-redux';
 import { like, block } from '../../store/actions/match';
 import { setAlert } from '../../store/actions/alert';
 
-const Card = ({ candidate, like, block, setResetCandidates, setAlert }) => {
+const Card = ({ candidate, like, block, setResetCandidates, setAlert, setShowProfile, setSelectedUser }) => {
 
     const [images, setImages] = useState([]);
+
+
+    const selectUser = () => {
+        setShowProfile(prev => !prev);
+        setSelectedUser(candidate);
+    }
 
     useEffect(() => {
         const getImages = async () => {
@@ -34,11 +40,13 @@ const Card = ({ candidate, like, block, setResetCandidates, setAlert }) => {
     }, [candidate]);
 
     const likeClick = () => {
+        setShowProfile(false);
         like(candidate.id);
         setResetCandidates((before) => !before);
     };
 
     const blockClick = () => {
+        setShowProfile(false);
         block(candidate.id);
         setResetCandidates((before) => !before);
     };
@@ -47,7 +55,7 @@ const Card = ({ candidate, like, block, setResetCandidates, setAlert }) => {
         <div>
 
             {images.length > 0 &&
-                <div className="card"
+                <div className="card" onClick={selectUser}
                     style={{ backgroundImage: `url("http://localhost:5000/images/${images[0].path}")` }}
                 >
                     <div className='card-footer'>

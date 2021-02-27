@@ -13,7 +13,7 @@ import SidebarChat from './SidebarChat';
 import SidebarMatch from './SidebarMatch';
 
 
-const Sidebar = ({ user, logout, setShowProfile, selectedUser, setSelectedUser }) => {
+const Sidebar = ({ user, logout, setShowProfile, setSelectedUser }) => {
     const [inChat, setInChat] = useState(false);
 
     console.log(user);

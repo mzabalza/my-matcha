@@ -25,7 +25,7 @@ const Home = ({ isAuthenticated, user }) => {
     return (
         <div className='home-container'>
             <Sidebar setShowProfile={setShowProfile} setSelectedUser={setSelectedUser} />
-            <Candidates />
+            <Candidates setShowProfile={setShowProfile} setSelectedUser={setSelectedUser} />
             {showProfile && <SidebarProfile selectedUser={selectedUser} />}
         </div>
     )
