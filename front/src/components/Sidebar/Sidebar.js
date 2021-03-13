@@ -12,9 +12,11 @@ import { logout } from '../../store/actions/auth';
 import SidebarChat from './SidebarChat';
 import SidebarMatch from './SidebarMatch';
 
+// ACTIONS
+import { setChat } from '../../store/actions/chat';
 
-const Sidebar = ({ user, logout, setShowProfile, setSelectedUser }) => {
-    const [inChat, setInChat] = useState(false);
+
+const Sidebar = ({ user, logout, setShowProfile, setSelectedUser, inChat, setChat }) => {
 
     console.log(user);
 
@@ -30,8 +32,8 @@ const Sidebar = ({ user, logout, setShowProfile, setSelectedUser }) => {
                     }
                 </div>
                 <div className='sidebar-menu'>
-                    <a className='btn-text' onClick={() => setInChat(false)}>MATCHES</a>
-                    <a className='btn-text' onClick={() => setInChat(true)}>MESSAGES</a>
+                    <a className='btn-text' onClick={() => setChat(false)}>MATCHES</a>
+                    <a className='btn-text' onClick={() => setChat(true)}>MESSAGES</a>
                 </div>
                 <div className='sidebar-content'>
                     {inChat ? < SidebarChat /> : < SidebarMatch setShowProfile={setShowProfile} setSelectedUser={setSelectedUser} />}
@@ -45,7 +47,8 @@ const Sidebar = ({ user, logout, setShowProfile, setSelectedUser }) => {
 }
 
 const mapStateToProps = state => ({
-    user: state.auth.user
+    user: state.auth.user,
+    inChat: state.chat.inChat
 })
 
-export default connect(mapStateToProps, { logout })(Sidebar);
+export default connect(mapStateToProps, { logout, setChat })(Sidebar);

@@ -19,3 +19,7 @@ export const GET_MATCHES = 'GET_MATCHES';
 export const GET_CANDIDATES = 'GET_CANDIDATES';
 // LIKE ERROR
 export const LIKE_ERROR = 'LIKE_ERROR';
+
+// CHAT
+export const SET_CHAT = 'SET_CHAT';
+export const LOAD_CHAT_USER = 'LOAD_CHAT_USER';

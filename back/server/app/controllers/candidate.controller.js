@@ -6,6 +6,7 @@ const Image = require('../models/image.model');
 
 // Retrieve all Users from the database.
 exports.findAll = (req, res) => {
+    // Get all users that are already liked and blocked and then get all users that are not in there
 
     const user = req.user;
 
